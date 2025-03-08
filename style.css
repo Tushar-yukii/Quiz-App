@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --clr--colr: orangered;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  background-image: url("");
+  background-size: cover;
+  font-family: "Poppins";
+}
+.Welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 550px; /*change*/
+  border-radius: 20px;
+  gap: 30px;
+  padding: 20px;
+  box-shadow: 0px 0px 25px; /*change*/
+  background-color: white;
+  color: rgba(0, 0, 0, 0.324);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+.Welcome h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: black;
+}
+.Welcome button {
+  padding: 5px 80px;
+  border: none;
+  border-radius: 33px; /*change*/
+  background-color: var(--clr--colr);
+  font-size: 24px;
+  color: white;
+  font-weight: 800;
+}
+.Types {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 550px; /*change*/
+  border-radius: 20px;
+  gap: 30px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px; /*change*/
+  background-color: white;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  display: none;
+}
+.category {
+  width: 70%;
+  padding: 10px 0px;
+  font-size: 22px;
+  border-radius: 30px;
+  transition: 1s ease;
+  background-color: var(--clr--colr);
+  color: white;
+  font-weight: 500;
+}
+.Main-Contant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 550px; /*change*/
+  border-radius: 20px;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px; /*change*/
+  background-color: white;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  display: none;
+}
+.Question {
+  font-size: 28px;
+  text-align: left;
+  width: 100%;
+}
+.Option {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.Answer {
+  width: 70%;
+  padding: 5px 20px;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: 1s ease;
+  background-color: var(--clr--colr);
+  color: white;
+}
+.Controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.Main-Contant button {
+  border: none;
+  font-size: 18px;
+  padding: 12px;
+  width: 120px;
+  border-radius: 30px;
+  background-color: teal;
+  color: white;
+  font-weight: 700;
+  transition: 1s ease;
+}
+.Score {
+  font-size: 18px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 30px;
+  background-color: teal;
+  color: white;
+  font-weight: 700;
+  transition: 1s ease;
+}
+.Main-Contant h3 {
+  color: teal;
+  font-size: 20px;
+  transition: 0.5s ease;
+  display: none;
+}
+.Result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 550px;
+  border-radius: 20px;
+  gap: 40px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px black;
+  background-color: white;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-size: 23px;
+  font-weight: 800;
+  color: black;
+  display: none;
+}
+.Result button {
+  border: none;
+  font-size: 23px;
+  padding: 10px 70px;
+  border-radius: 30px;
+  background-color: var(--clr--colr);
+  color: white;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.effect:hover {
+  background-color: var(--clr--colr);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  transform: scale(1.1);
+}
+.Hover:hover {
+  background-color: teal;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  transform: scale(1.1);
+}
+.effect:active,
+.Hover:active {
+  transform: scale(0.8);
+  transition: 0.3s ease;
+}
+@media only screen and(max-width:600px) {
+  .Welcome {
+    width: 80%;
+  }
+  .Types {
+    width: 80%;
+  }
+  .Main-Contant {
+    width: 80%;
+    transform: scale(0.8);
+  }
+  .Answer {
+    width: 80%;
+    font-size: 18px;
+  }
+  .Question {
+    font-size: 22px;
+  }
+  .Result {
+    width: 80%;
+  }
+}
