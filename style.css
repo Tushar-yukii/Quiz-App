@@ -6,6 +6,7 @@
   --clr--colr: orangered;
 }
 body {
+  background-color:rgb(20, 47, 97);
   display: flex;
   justify-content: center;
   align-items: center;
